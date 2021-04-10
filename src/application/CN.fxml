@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CNController">
+   <center>
+      <AnchorPane prefHeight="430.0" prefWidth="1372.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="comptbl" layoutX="-6.0" onMouseClicked="#MouseClicked" prefHeight="430.0" prefWidth="1380.0" style="-fx-background-color: black;">
+              <columns>
+                <TableColumn fx:id="compNotbl" prefWidth="87.99999690055847" style="-fx-text-fill: WHITE; -fx-background-color: grey;" text="Complaint No" />
+                <TableColumn fx:id="CNICtbl" prefWidth="143.19998168945312" style="-fx-background-color: grey;" text="CNIC" />
+                  <TableColumn fx:id="nametbl" prefWidth="116.80000305175781" style="-fx-background-color: grey;" text="Name" />
+                  <TableColumn fx:id="emailtbl" prefWidth="166.4000244140625" style="-fx-background-color: grey;" text="Email" />
+                  <TableColumn fx:id="phonetbl" prefWidth="170.4000244140625" style="-fx-background-color: grey;" text="Phone" />
+                  <TableColumn fx:id="datetbl" prefWidth="112.0" style="-fx-background-color: grey;" text="Incident Date" />
+                  <TableColumn fx:id="timetbl" prefWidth="98.40008544921875" style="-fx-background-color: grey;" text="Incident Time" />
+                  <TableColumn fx:id="placetbl" prefWidth="162.4000244140625" style="-fx-background-color: grey;" text="Incident Place" />
+                  <TableColumn fx:id="detailstbl" prefWidth="320.7999267578125" style="-fx-background-color: grey;" text="Incident Details" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

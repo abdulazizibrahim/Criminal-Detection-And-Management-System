@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SHOController">
+   <top>
+      <AnchorPane blendMode="MULTIPLY" prefHeight="460.0" prefWidth="484.0" style="-fx-background-color: BLACK;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="202.0" layoutY="27.0" prefHeight="18.0" prefWidth="87.0" text="SHO PANEL">
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.02877697841726619" endY="0.011990407673860948">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill></Label>
+            <Button fx:id="CompNotibtn" cache="true" layoutX="102.0" layoutY="76.0" mnemonicParsing="false" onAction="#ComplaintNotification" prefHeight="39.0" prefWidth="285.0" style="-fx-background-color: #006BCA;" text="Complaint Notification" textFill="WHITE">
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.24" specularConstant="0.56" specularExponent="27.48" surfaceScale="4.3">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="FirRegbtn" layoutX="103.0" layoutY="140.0" mnemonicParsing="false" onAction="#FIR_Registration" prefHeight="43.0" prefWidth="284.0" style="-fx-background-color: #006BCA;" text="FIR Registration" textFill="WHITE">
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.24" specularConstant="0.56" specularExponent="27.48" surfaceScale="4.3">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="TeamAssbtn" layoutX="102.0" layoutY="205.0" mnemonicParsing="false" onAction="#Team_Assignment" prefHeight="42.0" prefWidth="287.0" style="-fx-background-color: #006BCA;" text="Team Assignement" textFill="WHITE">
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.24" specularConstant="0.56" specularExponent="27.48" surfaceScale="4.3">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="CriminalRegbtn" layoutX="101.0" layoutY="264.0" mnemonicParsing="false" onAction="#Criminal_Registration" prefHeight="46.0" prefWidth="285.0" style="-fx-background-color: #006BCA;" text="Criminal Registration" textFill="WHITE">
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.24" specularConstant="0.56" specularExponent="27.48" surfaceScale="4.3">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="TeamStsbtn" layoutX="102.0" layoutY="330.0" mnemonicParsing="false" onAction="#Team_Status" prefHeight="43.0" prefWidth="286.0" style="-fx-background-color: #006BCA;" text="Team Status" textFill="WHITE">
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.24" specularConstant="0.56" specularExponent="27.48" surfaceScale="4.3">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="cp" layoutX="103.0" layoutY="392.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="49.0" prefWidth="286.0" style="-fx-background-color: #006BCA;" text="Change Password" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.24" specularConstant="0.56" specularExponent="27.48" surfaceScale="4.3">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+   </top>
+</BorderPane>

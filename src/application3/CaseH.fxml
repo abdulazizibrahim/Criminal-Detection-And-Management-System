@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application3.CaseHController">
+   <center>
+      <AnchorPane prefHeight="510.0" prefWidth="814.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="326.0" layoutY="22.0" prefHeight="22.0" prefWidth="162.0" text="Case Information">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutY="144.0" onMouseClicked="#MouseClicked" prefHeight="366.0" prefWidth="814.0">
+              <columns>
+                <TableColumn fx:id="tblcase" prefWidth="75.0" text="Case No" />
+                <TableColumn fx:id="tblfir" prefWidth="75.0" text="FIR No" />
+                  <TableColumn fx:id="tblcourt" prefWidth="75.0" text="Court" />
+                  <TableColumn fx:id="tbljudge" prefWidth="75.0" text="Judge" />
+                  <TableColumn fx:id="tbllawyer" prefWidth="75.0" text="Lawyer" />
+                  <TableColumn fx:id="tblclawyer" prefWidth="108.79998779296875" text="Criminals Lawyer" />
+                  <TableColumn fx:id="tbltime" prefWidth="58.39996337890625" text="Time" />
+                  <TableColumn fx:id="tbldate" prefWidth="59.20001220703125" text="Date" />
+                  <TableColumn fx:id="tblclocation" prefWidth="106.39996337890625" text="Court Location" />
+                  <TableColumn fx:id="tblps" prefWidth="102.4000244140625" text="Police Station" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

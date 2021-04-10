@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application4.CPDFController">
+   <center>
+      <AnchorPane prefHeight="456.0" prefWidth="531.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="237.0" layoutY="25.0" prefHeight="18.0" prefWidth="97.0" text="Criminal Search">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="69.0" text="Criminal Name" />
+            <TextField fx:id="txtname" layoutX="280.0" layoutY="65.0" promptText="Name" />
+            <Button fx:id="btnsubmit" layoutX="329.0" layoutY="116.0" mnemonicParsing="false" onAction="#Submit" text="Submit" />
+            <TableView fx:id="Table" layoutX="1.0" layoutY="162.0" prefHeight="243.0" prefWidth="531.0">
+              <columns>
+                <TableColumn fx:id="tblcnic" prefWidth="83.19998323917389" text="CNIC" />
+                <TableColumn fx:id="tblname" prefWidth="75.99999237060547" text="Name" />
+                  <TableColumn fx:id="tblphone" prefWidth="83.20001220703125" text="Phone" />
+                  <TableColumn fx:id="tblcrime" prefWidth="124.79998779296875" text="Crime" />
+                  <TableColumn fx:id="tbldoc" prefWidth="165.60006713867188" text="Details of Crime" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnprint" layoutX="226.0" layoutY="417.0" mnemonicParsing="false" onAction="#printTable" text="Print" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

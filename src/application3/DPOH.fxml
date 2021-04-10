@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application3.DPOHController">
+   <top>
+      <AnchorPane prefHeight="387.0" prefWidth="307.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="90.0" layoutY="26.0" prefHeight="31.0" prefWidth="119.0" text=" DPO Handle " textFill="WHITE">
+               <font>
+                  <Font name="American Typewriter" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnfir" layoutX="57.0" layoutY="86.0" mnemonicParsing="false" onAction="#Action_Fir" prefHeight="33.0" prefWidth="195.0" style="-fx-background-color: #0031FB #0031FB;" text="FIR Registration">
+               <effect>
+                  <Lighting diffuseConstant="1.07" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.74">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.026378896882493952" endY="1.0" startY="0.5851318944844125">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+            <Button fx:id="btncriminal" layoutX="57.0" layoutY="140.0" mnemonicParsing="false" onAction="#Action_criminal" prefHeight="36.0" prefWidth="196.0" style="-fx-background-color: #0031FB #0031FB;" text="Criminal Registration">
+               <effect>
+                  <Lighting diffuseConstant="1.07" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.74">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.026378896882493952" endY="1.0" startY="0.5851318944844125">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+            <Button fx:id="btnteam" layoutX="56.0" layoutY="194.0" mnemonicParsing="false" onAction="#Action_team" prefHeight="34.0" prefWidth="198.0" style="-fx-background-color: #0031FB #0031FB;" text="Team Assignment">
+               <effect>
+                  <Lighting diffuseConstant="1.07" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.74">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.026378896882493952" endY="1.0" startY="0.5851318944844125">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+            <Button fx:id="btnch" layoutX="57.0" layoutY="245.0" mnemonicParsing="false" onAction="#Action_CH" prefHeight="34.0" prefWidth="196.0" style="-fx-background-color: #0031FB #0031FB;" text="Case Handling">
+               <effect>
+                  <Lighting diffuseConstant="1.07" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.74">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.026378896882493952" endY="1.0" startY="0.5851318944844125">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+            <Button fx:id="btncrg" layoutX="56.0" layoutY="298.0" mnemonicParsing="false" onAction="#Action_CRG" prefHeight="35.0" prefWidth="198.0" style="-fx-background-color: #0031FB #0031FB;" text="Case Report Generation">
+               <effect>
+                  <Lighting diffuseConstant="1.07" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.74">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="American Typewriter" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.026378896882493952" endY="1.0" startY="0.5851318944844125">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

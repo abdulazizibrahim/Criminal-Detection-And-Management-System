@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application2.TRController">
+   <center>
+      <AnchorPane prefHeight="435.0" prefWidth="682.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="281.0" layoutY="22.0" prefHeight="33.0" prefWidth="121.0" text="Team Report" textFill="WHITE">
+               <font>
+                  <Font name="American Typewriter" size="19.0" />
+               </font></Label>
+            <TableView fx:id="tbltr" layoutY="72.0" onMouseClicked="#MouseClicked" prefHeight="381.0" prefWidth="682.0">
+              <columns>
+                <TableColumn fx:id="tblfirno" prefWidth="75.0" style="-fx-background-color: grey;" text="FIR No" />
+                <TableColumn fx:id="tblfirname" prefWidth="75.0" style="-fx-background-color: grey;" text="FIR Name" />
+                  <TableColumn fx:id="tblplace" prefWidth="103.20001220703125" style="-fx-background-color: grey;" text="Place" />
+                  <TableColumn fx:id="tbldetails" prefWidth="152.0" style="-fx-background-color: grey;" text="Details" />
+                  <TableColumn fx:id="tblteam" prefWidth="57.60003662109375" style="-fx-background-color: grey;" text="Team" />
+                  <TableColumn fx:id="tblreport" prefWidth="218.40005493164062" style="-fx-background-color: grey;" text="Report" />
+              </columns>
+            </TableView>
+         </children>
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="1.22" specularExponent="19.53" surfaceScale="5.05">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+   </center>
+</BorderPane>
